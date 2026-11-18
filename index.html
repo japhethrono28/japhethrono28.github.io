@@ -1,109 +1,193 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Japheth Rono | ICT Professional</title>
 
 <style>
-body{
-font-family:Arial,sans-serif;
-margin:0;
-background:#f4f4f4;
-color:#333;
+* {
+    box-sizing: border-box;
 }
-header{
-background:#0b5ed7;
-color:white;
-text-align:center;
-padding:40px 20px;
+
+html {
+    scroll-behavior: smooth;
 }
-img{
-width:180px;
-height:180px;
-border-radius:50%;
-border:5px solid white;
-object-fit:cover;
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background:
+        linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.82)),
+        url("background.jpg") center center / cover fixed no-repeat;
+    min-height: 100vh;
 }
-section{
-max-width:900px;
-margin:auto;
-padding:20px;
+
+header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
 }
-.card{
-background:white;
-padding:20px;
-margin:20px 0;
-border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,.1);
+
+header h1 {
+    font-size: 48px;
+    margin: 15px 0;
 }
-footer{
-background:#0b5ed7;
-color:white;
-text-align:center;
-padding:15px;
+
+header h3 {
+    color: #55c7ff;
+    font-size: 24px;
+}
+
+header p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 22px;
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #55c7ff;
+}
+
+section {
+    max-width: 950px;
+    margin: auto;
+    padding: 25px 20px;
+}
+
+.card {
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    margin: 25px 0;
+    border-radius: 15px;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.card h2 {
+    color: #55c7ff;
+}
+
+.card p, .card li {
+    line-height: 1.8;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+.contact a {
+    color: #55c7ff;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: rgba(0,0,0,0.8);
+}
+
+@media(max-width:600px) {
+    header h1 {
+        font-size: 35px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    .card {
+        padding: 22px;
+    }
 }
 </style>
-
 </head>
 
 <body>
 
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
 <header>
+    <h1>Japheth Rono</h1>
 
-<img src="profile.jpg" alt="Japheth Rono">
+    <h3>ICT Professional</h3>
 
-<h1>Japheth Rono</h1>
-
-<h3>ICT Professional</h3>
-
-<p>Computer Support | Networking | Health Information Systems</p>
-
+    <p>
+        Computer Support | Networking |
+        Health Information Systems
+    </p>
 </header>
 
 <section>
 
-<div class="card">
-<h2>About Me</h2>
+<div class="card" id="about">
+    <h2>About Me</h2>
 
-<p>
-I am an ICT professional with experience in computer maintenance,
-network administration, Windows and Ubuntu installation,
-KenyaEMR, SHA systems and technical support.
-</p>
-
+    <p>
+        I am an ICT professional working at Londiani
+        Sub County Hospital, with experience in computer
+        maintenance, network administration, Windows and
+        Ubuntu installation, KenyaEMR, SHA systems and
+        technical support.
+    </p>
 </div>
 
-<div class="card">
+<div class="card" id="skills">
+    <h2>Technical Skills</h2>
 
-<h2>Skills</h2>
-
-<ul>
-<li>Computer Maintenance</li>
-<li>Networking</li>
-<li>Windows & Ubuntu</li>
-<li>KenyaEMR & SHA Support</li>
-<li>Technical Support</li>
-</ul>
-
+    <ul>
+        <li>Computer Installation and Maintenance</li>
+        <li>Network Administration and Troubleshooting</li>
+        <li>Windows and Ubuntu Operating Systems</li>
+        <li>KenyaEMR and SHA Systems Support</li>
+        <li>Hardware and Software Troubleshooting</li>
+        <li>Technical Support and User Training</li>
+    </ul>
 </div>
 
-<div class="card">
+<div class="card contact" id="contact">
+    <h2>Contact Me</h2>
 
-<h2>Contact</h2>
-
-<p>Email: japhethrono28@gmail.com</p>
-
+    <p>
+        Email:
+        <a href="mailto:japhethrono28@gmail.com">
+        japhethrono28@gmail.com</a>
+    </p>
 </div>
 
 </section>
 
 <footer>
-
-© 2026 Japheth Rono
-
+    <p>© 2026 Japheth Rono | ICT Professional</p>
 </footer>
 
 </body>
-
 </html>
