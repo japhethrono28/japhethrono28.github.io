@@ -133,6 +133,28 @@ footer {
         padding: 22px;
     }
 }
+/* PROJECTS STYLING */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: rgba(255,255,255,0.08);
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.project h3 {
+    color: #55c7ff;
+}
+
+.project p {
+    line-height: 1.7;
+}
 </style>
 </head>
 
@@ -141,6 +163,7 @@ footer {
 <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
 </nav>
 
@@ -223,6 +246,49 @@ footer {
     </ul>
 </div>
 
+
+<div class="card" id="projects">
+    <h2>My ICT Projects & Experience</h2>
+
+    <div class="project-grid">
+
+        <div class="project">
+            <h3>Computer Systems Support</h3>
+            <p>
+                Windows and Ubuntu installation,
+                computer maintenance, formatting
+                and troubleshooting.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Networking & Infrastructure</h3>
+            <p>
+                LAN configuration, router and switch
+                setup, Ethernet cabling and network
+                troubleshooting.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Health Information Systems</h3>
+            <p>
+                Technical support for Taifa Care,
+                KenyaEMR, Tiberbu and SHA systems.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>Biometric Solutions</h3>
+            <p>
+                Installation and troubleshooting of
+                biometric scanners, printers and
+                ICT peripherals.
+            </p>
+        </div>
+
+    </div>
+</div>
 
 <div class="card contact" id="contact">
 <h2>Contact Me</h2>
